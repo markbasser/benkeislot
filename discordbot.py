@@ -255,13 +255,13 @@ async def on_message(message):
         # チャンネルへメッセージを送信
         await message.channel.send(f"｡ﾟ✶ฺ.( *´艸｀).✶ฺﾟ｡")  # f文字列（フォーマット済み文字列リテラル）
     
-    if message.content == "thankyou!":
+    if message.content == "┏○)) ｱﾘﾆ━━━━━━━━ﾝ!":
         # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear♥ {message.author.mention}♥No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send(f"┏○)) ｱﾘﾍﾞ━━━━━━━━ﾝ<:hai_kao:699072592987947117> ")  # f文字列（フォーマット済み文字列リテラル）
     
-    if message.content == "Thank U":
+    if message.content == "(ﾟ∀ﾟ 三( ﾟ∀ﾟ) 三 ﾟ∀ﾟ)":
         # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear♥ {message.author.mention}♥No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send(f"(ﾟ∀ﾟ 三 ﾟ∀ﾟ)")  # f文字列（フォーマット済み文字列リテラル）
             
     if message.content == "(　ﾟ∀ﾟ)o彡ﾟみみたん！みみたす！":
         # チャンネルへメッセージを送信
@@ -332,11 +332,6 @@ async def on_message(message):
         q = await message.channel.send(" /info 29coin ")
         [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記 
 
-@client.event
-async def on_message(message):
-    """メッセージを処理"""
-    if message.author.bot:  # ボットのメッセージをハネる
-        return
 
 
     elif message.content == "/tip bgpt 100 <@&703359665974673484>  ":
